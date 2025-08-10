@@ -1,0 +1,143 @@
+.card {
+    border: 2px solid #ddd;
+    /* מסגרת אפורה דקה */
+    border-radius: 12px;
+    /* פינות מעוגלות */
+    padding: 16px;
+    /* רווח פנימי */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* צל קל */
+    transition: 0.3s;
+    /* אנימציה חלקה במעבר עכבר */
+    background: white;
+    display: flex;
+    /* הצגת תוכן בתוך הכרטיס כ-flex */
+    flex-direction: column;
+    /* סידור אנכי של התוכן */
+    align-items: center;
+    /* יישור לאמצע */
+    max-width: 320px;
+    /* רוחב מקסימלי */
+    margin: 10px auto;
+    /* רווחים ויישור מרכזי */
+    text-align: right;
+    /* יישור טקסט לימין */
+    box-sizing: border-box;
+    /* כולל פדינג ובורדר בתוך הרוחב */
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(19, 16, 16, 0.88);
+    /* צל חזק יותר במעבר עכבר */
+}
+
+.cardLink {
+    text-decoration: none;
+    /* בלי קו מתחת לקישור */
+    color: inherit;
+    /* ירש את הצבע של ההורה */
+    width: 100%;
+    /* כל הרוחב */
+    display: block;
+    /* שיהיה ניתן ללחוץ על כולו */
+}
+
+.image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    /* תמונה תכסה את האזור מבלי תשנה את הצורה שלה בצורה לא טבעית */
+    border-radius: 8px;
+    /* פינות מעוגלות */
+}
+
+.name {
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.price {
+    color: #555;
+    margin-top: 6px;
+    text-align: center;
+}
+
+/* כפתור "צור קשר" */
+.button {
+    margin-top: 12px;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005fa3;
+}
+
+/* כפתור הצג/הסתר תיאור */
+.showDescButton {
+    margin-top: 12px;
+    background-color: transparent;
+    /* רקע שקוף */
+    border: none;
+    color: #0077cc;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.showDescButton:hover {
+    color: #005fa3;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: right;
+    color: #444;
+    line-height: 1.5;
+    /* מרווח שורות */
+}
+
+/* רספונסיביות – התאמות למסכים קטנים */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        padding: 12px;
+    }
+
+    .image {
+        height: 140px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .price {
+        font-size: 13px;
+    }
+}

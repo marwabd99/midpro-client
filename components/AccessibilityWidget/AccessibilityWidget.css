@@ -1,0 +1,54 @@
+.accessibility-button {
+    position: fixed;
+    /* קובע את מיקום הכפתור ביחס לחלון הדפדפן (לא לתוך אלמנט אחר) */
+    bottom: 110px;
+    /* מרחק מהתחתית של הדף */
+    right: 20px;
+    /* מרחק מהצד הימני של הדף */
+    background-color: #0078d7;
+    /* צבע רקע כחול */
+    color: #fff;
+    /* צבע טקסט לבן */
+    border-radius: 50%;
+    /* עיגול מלא */
+    width: 50px;
+    /* רוחב הכפתור */
+    height: 50px;
+    /* גובה הכפתור */
+    border: none;
+    /* ללא מסגרת */
+    font-size: 24px;
+    /* גודל הסמל (♿) */
+    cursor: pointer;
+    /* מצביע עכבר משתנה ליד בעת ריחוף */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    /* הצללה עדינה */
+    z-index: 1000;
+    /* שכבה גבוהה – כדי להיות תמיד מעל אלמנטים אחרים */
+}
+.accessibility-panel {
+    position: fixed;
+    /* תפריט מקובע למסך */
+    bottom: 80px;
+    /* מעט מעל הכפתור (כדי שלא יסתיר אותו) */
+    right: 70px;
+    /* מרחק מהצד הימני */
+    background-color: #fff;
+    /* רקע לבן */
+    border: 1px solid #ccc;
+    /* מסגרת אפורה בהירה */
+    border-radius: 8px;
+    /* פינות מעוגלות */
+    padding: 15px;
+    /* ריווח פנימי בתוך הפאנל */
+    width: 280px;
+    /* רוחב הפאנל */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    /* הצללה עמוקה יותר */
+    z-index: 1000;
+    /* מעל אלמנטים רגילים */
+    direction: rtl;
+    /* כתיבה מימין לשמאל (עברית) */
+    font-family: Arial, sans-serif;
+    /* גופן בסיסי */
+}

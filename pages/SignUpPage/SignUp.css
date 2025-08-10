@@ -1,0 +1,147 @@
+.signup-container {
+    max-width: 400px;
+    /* רוחב מקסימלי של הקונטיינר */
+    margin: 100px auto;
+    /* מרווח אנכי גדול (100px), ומרכז אופקי אוטומטי */
+    padding: 20px;
+    /* ריווח פנימי מכל הכיוונים */
+    background-color: #DCE1DE;
+    /* צבע רקע בהיר (ירקרק-אפור) */
+    border-radius: 8px;
+    /* פינות מעוגלות */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* צל עדין מסביב */
+    direction: rtl;
+    /* כיוון טקסט מימין לשמאל */
+    text-align: right;
+    /* יישור טקסט לימין */
+    font-family: 'Rubik', sans-serif;
+    /* הגופן המשמש בדף */
+}
+
+.signup-container h2 {
+    text-align: center;
+    /* כותרת מיושרת למרכז */
+    font-size: 2rem;
+    /* גודל גופן גדול */
+    margin-bottom: 20px;
+    /* ריווח מתחת לכותרת */
+    color: #222;
+    /* צבע כהה לכותרת */
+}
+
+.signup-form {
+    display: flex;
+    /* שימוש ב-flexbox */
+    flex-direction: column;
+    /* סידור האלמנטים בטור (אנכי) */
+    gap: 15px;
+    /* רווח בין השדות והכפתור */
+}
+
+.signup-form input {
+    padding: 12px 10px;
+    /* ריווח פנימי בתוך השדות */
+    font-size: 16px;
+    /* גודל טקסט */
+    border: 1px solid #ccc;
+    /* מסגרת בהירה */
+    border-radius: 4px;
+    /* פינות מעוגלות לשדות */
+    outline: none;
+    /* ללא מסגרת דגש ברירת מחדל */
+    transition: border-color 0.3s ease;
+    /* אנימציה חלקה לשינוי צבע הגבול */
+}
+
+.signup-form input:focus {
+    border-color: #0077cc;
+    /* צבע גבול כחול בשדה פעיל */
+}
+
+.signup-form button {
+    padding: 12px;
+    /* ריווח פנימי בכפתור */
+    background-color: #0077cc;
+    /* צבע רקע כחול */
+    color: white;
+    /* טקסט לבן */
+    font-weight: bold;
+    /* עובי גופן כבד */
+    font-size: 18px;
+    /* גודל טקסט גדול יחסית */
+    border: none;
+    /* ללא מסגרת */
+    border-radius: 4px;
+    /* פינות מעוגלות */
+    cursor: pointer;
+    /* שינוי סמן בעת מעבר עם העכבר */
+    transition: background-color 0.3s ease;
+    /* אנימציית שינוי צבע רקע */
+}
+
+.signup-form button:hover {
+    background-color: #b09c9c;
+    /* שינוי צבע רקע בלחיצה */
+}
+
+.signup-container p {
+    margin-top: 20px;
+    /* ריווח מעל הפסקה */
+    font-size: 14px;
+    /* גודל טקסט קטן */
+    color: #444;
+    /* צבע אפור כהה */
+    text-align: center;
+    /* יישור למרכז */
+}
+
+.signup-container p a {
+    color: #0077cc;
+    /* צבע קישורים כחול */
+    text-decoration: none;
+    /* ללא קו תחתון */
+    font-weight: 600;
+    /* עובי גופן בינוני-כבד */
+}
+
+.signup-container p a:hover {
+    text-decoration: underline;
+    /* קו תחתון בקישור במעבר עכבר */
+}
+
+/* רספונסיביות למסכים קטנים */
+@media (max-width: 480px) {
+    .signup-container {
+        margin: 30px 16px;
+        /* שוליים קטנים יותר */
+        padding: 16px;
+        /* ריווח פנימי קטן יותר */
+        max-width: 100%;
+        /* רוחב מלא */
+    }
+
+    .signup-container h2 {
+        font-size: 1.6rem;
+        /* גודל כותרת קטן יותר */
+    }
+
+    .signup-form input {
+        font-size: 14px;
+        /* גודל טקסט קטן יותר */
+        padding: 10px;
+        /* ריווח פנימי קטן יותר */
+    }
+
+    .signup-form button {
+        font-size: 16px;
+        /* גודל טקסט קטן יחסית */
+        padding: 12px;
+        /* ריווח פנימי כמו קודם */
+    }
+
+    .signup-container p {
+        font-size: 13px;
+        /* טקסט קטן יותר בפסקה */
+    }
+}

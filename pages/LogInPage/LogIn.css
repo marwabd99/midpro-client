@@ -1,0 +1,139 @@
+.LogIn-container {
+    max-width: 400px;
+    /* רוחב מקסימלי של הקונטיינר */
+    margin: 100px auto;
+    /* ריווח עליון ותחתון גדול, ומרכז אוטומטי אופקי */
+    padding: 20px;
+    /* ריווח פנימי מכל הכיוונים */
+    background-color: #DCE1DE;
+    /* צבע רקע אפור-ירקרק בהיר */
+    border-radius: 8px;
+    /* פינות מעוגלות */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* צל רך מסביב */
+    direction: rtl;
+    /* כיוון טקסט מימין לשמאל */
+    text-align: right;
+    /* יישור טקסט לימין */
+}
+
+.LogIn-container h2 {
+    text-align: center;
+    /* כותרת הכניסה מיושרת למרכז */
+}
+
+.LogIn-form {
+    display: flex;
+    /* שימוש ב-flexbox */
+    flex-direction: column;
+    /* פריסת אלמנטים בעמודה (מלמעלה למטה) */
+    gap: 15px;
+    /* רווח בין כל האלמנטים בטופס */
+}
+
+.LogIn-form input {
+    padding: 10px;
+    /* ריווח פנימי בשדות הקלט */
+    border: 1px solid #ccc;
+    /* גבול דק בצבע אפור בהיר */
+    border-radius: 4px;
+    /* פינות מעוגלות קלות */
+    font-size: 16px;
+    /* גודל טקסט קריא */
+}
+
+.LogIn-form button {
+    padding: 10px;
+    /* ריווח פנימי בכפתור */
+    background-color: #0077cc;
+    /* צבע רקע כחול */
+    color: white;
+    /* צבע טקסט לבן */
+    font-weight: bold;
+    /* טקסט מודגש */
+    border: none;
+    /* ללא גבול */
+    border-radius: 4px;
+    /* פינות מעוגלות */
+    cursor: pointer;
+    /* סמן עכבר משתנה ליד (כפתור לחיץ) */
+    font-size: 16px;
+    /* גודל טקסט */
+}
+
+.LogIn-form button:hover {
+    background-color: #005fa3;
+    /* צבע רקע כהה יותר בריחוף */
+}
+
+/* קישור 'שכחתי סיסמה' */
+.forgot-password {
+    text-align: left;
+    /* יישור הטקסט לשמאל */
+    font-size: 14px;
+    /* גודל טקסט קטן יחסית */
+    margin-top: -10px;
+    /* הזזה כלפי מעלה */
+    margin-bottom: 10px;
+    /* ריווח מתחת */
+}
+
+.forgot-password a {
+    color: #0077cc;
+    /* צבע כחול לקישור */
+    text-decoration: none;
+    /* ללא קו תחתון */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+    /* קו תחתון בריחוף */
+}
+
+/* קישור להרשמה */
+.signup-link {
+    margin-top: 20px;
+    /* ריווח מעל */
+    text-align: center;
+    /* יישור למרכז */
+    font-size: 14px;
+    /* גודל טקסט קטן */
+}
+
+.signup-link a {
+    color: #0077cc;
+    /* צבע כחול */
+    text-decoration: none;
+    /* ללא קו תחתון */
+    font-weight: bold;
+    /* טקסט מודגש */
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+    /* קו תחתון בריחוף */
+}
+
+/* ✅ רספונסיביות למסכים קטנים */
+@media (max-width: 480px) {
+    .LogIn-container {
+        margin: 30px 16px;
+        /* שוליים קטנים יותר */
+        padding: 16px;
+        /* ריווח פנימי קטן יותר */
+    }
+
+    .LogIn-form input,
+    .LogIn-form button {
+        font-size: 14px;
+        /* גודל טקסט קטן יותר */
+        padding: 8px;
+        /* ריווח פנימי קטן יותר */
+    }
+
+    .forgot-password,
+    .signup-link {
+        font-size: 13px;
+        /* גודל טקסט קטן יותר */
+    }
+}

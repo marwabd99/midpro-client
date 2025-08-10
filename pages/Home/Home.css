@@ -1,0 +1,82 @@
+.popup-wrapper {
+    position: fixed;
+    /* הפופאפ נמצא במיקום קבוע ביחס לחלון הדפדפן */
+    top: 0;
+    /* תפוס את כל הגובה מהקצה העליון */
+    left: 0;
+    /* תפוס את כל הרוחב מהקצה השמאלי */
+    right: 0;
+    /* תפוס את כל הרוחב מהקצה הימני */
+    bottom: 0;
+    /* תפוס את כל הגובה מהקצה התחתון */
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    /* יישור אופקי למרכז */
+    align-items: center;
+    /* יישור אנכי למרכז */
+    z-index: 999;
+    /* מבטיח שהפופאפ יוצג מעל רוב התוכן */
+    padding: 20px;
+    /* ריווח פנימי סביב התוכן (להתרחק מקצוות המסך) */
+}
+
+.popup-message {
+    background-color: #fff;
+    border: 2px solid #0078d7;
+    /* מסגרת כחולה בעובי 2 פיקסלים */
+    border-radius: 16px;
+    /* פינות מעוגלות */
+    padding: 40px 30px;
+    /* ריווח פנימי: 40 פיקסלים למעלה ולמטה, 30 פיקסלים מצדדים */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    /* צל עדין מתחת לתיבה */
+    text-align: center;
+    /* יישור טקסט למרכז */
+    font-size: 18px;
+    /* גודל גופן */
+    max-width: 400px;
+    /* רוחב מקסימלי */
+    width: 100%;
+    /* רוחב מלא יחסית לקונטיינר ההורה */
+    direction: rtl;
+}
+
+.popup-message button {
+    margin-top: 20px;
+    /* רווח מעל הכפתור */
+    padding: 10px 24px;
+    /* ריווח פנימי בתוך הכפתור */
+    background-color: #0078d7;
+    /* צבע רקע כחול */
+    color: white;
+    border: none;
+    /* ללא מסגרת */
+    border-radius: 10px;
+    /* פינות מעוגלות */
+    cursor: pointer;
+    /* סמן עכבר משתנה ליד */
+    font-size: 16px;
+    /* גודל טקסט */
+}
+
+.popup-message button:hover {
+    background-color: #005fa3;
+}
+
+/* רספונסיביות למסכים קטנים - התאמות למכשירים ניידים */
+@media (max-width: 480px) {
+    .popup-message {
+        padding: 30px 20px;
+        /* ריווח פנימי קטן יותר */
+        font-size: 16px;
+        /* גודל גופן קטן יותר */
+    }
+
+    .popup-message button {
+        font-size: 14px;
+        /* גודל טקסט קטן יותר בכפתור */
+        padding: 8px 16px;
+        /* ריווח פנימי קטן יותר בכפתור */
+    }
+}

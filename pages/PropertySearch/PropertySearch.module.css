@@ -1,0 +1,141 @@
+.container {
+    max-width: 900px;
+    /* רוחב מקסימלי של הקונטיינר */
+    margin: 40px auto;
+    /* שוליים עליונים ותחתונים 40 פיקסלים, מרכז אופקי */
+    padding: 0 20px;
+    /* ריווח פנימי ימני ושמאלי */
+    direction: rtl;
+    /* כיוון טקסט מימין לשמאל */
+    font-family: 'Rubik', sans-serif;
+    /* גופן עיקרי */
+}
+
+.title {
+    text-align: center;
+    /* יישור טקסט למרכז */
+    font-size: 2rem;
+    /* גודל גופן גדול */
+    margin-bottom: 24px;
+    /* ריווח תחתון */
+}
+
+.filters {
+    display: flex;
+    /* פריסה גמישה של האלמנטים */
+    gap: 16px;
+    /* רווח בין המסננים */
+    justify-content: center;
+    /* יישור המסננים במרכז */
+    flex-wrap: wrap;
+    /* שבירת שורה אם המסננים לא נכנסים בשורה אחת */
+    margin-bottom: 16px;
+    /* ריווח תחתון */
+}
+
+.filters select {
+    padding: 10px;
+    /* ריווח פנימי בתוך התיבה */
+    font-size: 16px;
+    /* גודל טקסט */
+    border-radius: 6px;
+    /* פינות מעוגלות */
+    border: 1px solid #ccc;
+    /* גבול בהיר */
+    min-width: 150px;
+    /* רוחב מינימום */
+    flex: 1 1 150px;
+    /* גמישות פריט: גדילה, כיווץ, רוחב בסיס */
+}
+
+.resetButtonContainer {
+    text-align: center;
+    /* יישור כפתור האיפוס למרכז */
+    margin-bottom: 24px;
+    /* ריווח תחתון */
+}
+
+.button {
+    padding: 12px 28px;
+    /* ריווח פנימי בכפתור */
+    font-size: 16px;
+    /* גודל טקסט */
+    background-color: #0078d7;
+    /* צבע רקע כחול */
+    color: white;
+    /* צבע טקסט לבן */
+    border: none;
+    /* ללא מסגרת */
+    border-radius: 8px;
+    /* פינות מעוגלות */
+    cursor: pointer;
+    /* שינוי סמן כשעוברים מעל */
+    font-weight: 600;
+    /* עובי גופן בינוני-כבד */
+}
+
+.button:hover {
+    background-color: #005fa3;
+    /* צבע רקע כהה יותר במעבר עם העכבר */
+}
+
+.resultsTitle {
+    font-size: 1.5rem;
+    /* גודל כותרת תוצאות */
+    font-weight: 600;
+    /* עובי גופן */
+    margin-bottom: 20px;
+    /* ריווח תחתון */
+    text-align: center;
+    /* יישור טקסט למרכז */
+}
+
+.cards {
+    display: grid;
+    /* שימוש ברשת להצגת הכרטיסים */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* טורים אוטומטיים שגודלם בין 280 פיקסלים לבין רוחב חלקי */
+    gap: 24px;
+    /* רווח בין תאי הרשת */
+}
+
+/* טקסט למקרה שאין תוצאות */
+.noResults {
+    text-align: center;
+    /* יישור טקסט למרכז */
+    font-size: 1.2rem;
+    /* גודל טקסט בינוני */
+    color: #555;
+    /* צבע אפור כהה */
+}
+
+/* רספונסיביות למסכים קטנים (טלפונים) */
+@media (max-width: 480px) {
+    .filters select {
+        min-width: 100%;
+        /* תיבת בחירה תתפוס 100% רוחב */
+        flex: 1 1 100%;
+        /* גמישות פריט מלאה */
+        font-size: 14px;
+        /* גודל טקסט קטן יותר */
+    }
+
+    .button {
+        width: 100%;
+        /* כפתור רוחב מלא */
+        font-size: 14px;
+        /* טקסט קטן יותר */
+        padding: 10px 0;
+        /* ריווח פנימי אנכי */
+    }
+
+    .title {
+        font-size: 1.6rem;
+        /* כותרת קטנה יותר */
+    }
+
+    .resultsTitle {
+        font-size: 1.2rem;
+        /* כותרת תוצאות קטנה יותר */
+    }
+}

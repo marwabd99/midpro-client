@@ -1,0 +1,79 @@
+.calculator {
+    max-width: 400px;
+    /* רוחב מקסימלי */
+    margin: 100px auto;
+    /* רווח עליון + מיקום במרכז האופקי */
+    padding: 2rem;
+    /* רווח פנימי */
+    background: #f8f8f8;
+    /* צבע רקע בהיר */
+    border-radius: 12px;
+    /* פינות מעוגלות */
+    direction: rtl;
+    /* טקסט מימין לשמאל */
+    font-family: Arial;
+    /* גופן קריא ונקי */
+}
+
+/* כותרת עליונה של המחשבון */
+h2 {
+    text-align: center;
+    /* מיקום באמצע */
+    margin-bottom: 1rem;
+    /* רווח תחתון */
+}
+
+/* עיצוב קבוצות של שדות קלט (Label + Input) */
+.form-group {
+    margin-bottom: 1rem;
+    /* רווח בין שדות */
+}
+
+/* תוויות לשדות */
+label {
+    display: block;
+    /* כל תווית תתפוס שורה שלמה */
+    margin-bottom: 0.3rem;
+    /* רווח בין התווית לקלט */
+}
+
+/* עיצוב שדות הקלט */
+input {
+    width: 100%;
+    /* רוחב מלא */
+    padding: 0.5rem;
+    /* רווח פנימי */
+    font-size: 1rem;
+    /* גודל טקסט נוח */
+}
+
+/* עיצוב כפתור "חשב" */
+button {
+    width: 100%;
+    padding: 0.7rem;
+    /* רווח פנימי גדול יותר */
+    font-size: 1.1rem;
+    /* גודל טקסט גדול יותר */
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    /* ללא מסגרת */
+    border-radius: 8px;
+    /* פינות מעוגלות */
+    cursor: pointer;
+    /* סמן עכבר משתנה ליד */
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* עיצוב תוצאת החישוב */
+.result {
+    margin-top: 1.5rem;
+    /* רווח מעל */
+    text-align: center;
+    /* מיקום במרכז */
+    font-weight: bold;
+    /* טקסט מודגש */
+}

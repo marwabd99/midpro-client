@@ -1,0 +1,82 @@
+.product-details {
+    max-width: 900px;
+    /* רוחב מקסימלי של הדף */
+    margin: 40px auto;
+    /* שוליים עליונים ותחתונים 40 פיקסלים, ומרכז אופקי */
+    padding: 0 20px;
+    /* ריווח פנימי ימני ושמאלי */
+    font-family: 'Rubik', sans-serif;
+    /* גופן עיקרי */
+    direction: rtl;
+    /* כיוון טקסט מימין לשמאל */
+    color: #333;
+    /* צבע טקסט כהה ונוח לקריאה */
+}
+
+.product-details h1 {
+    text-align: center;
+    /* יישור הכותרת למרכז */
+    font-size: 2.5rem;
+    /* גודל גופן גדול */
+    font-weight: 600;
+    /* עובי גופן בינוני-כבד */
+    margin-bottom: 20px;
+    /* ריווח תחתון לכותרת */
+}
+
+.product-image-wrapper {
+    text-align: center;
+    /* יישור תמונה למרכז */
+    margin-bottom: 20px;
+    /* ריווח מתחת לתמונה */
+}
+
+.product-image-wrapper img {
+    width: 100%;
+    /* תמונה תתפוס את כל רוחב הקונטיינר שלה */
+    max-width: 400px;
+    /* אך לא תעלה על 400 פיקסלים */
+    height: auto;
+    /* גובה אוטומטי לשמירת פרופורציות */
+    border-radius: 8px;
+    /* פינות מעוגלות לתמונה */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* צל עדין */
+}
+
+.product-info {
+    background-color: #f9f9f9;
+    /* רקע בהיר */
+    padding: 30px;
+    /* ריווח פנימי רחב */
+    border-radius: 12px;
+    /* פינות מעוגלות */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    /* צל נאה */
+    line-height: 1.8;
+    /* גובה שורות לקריאה נוחה */
+    font-size: 1.1rem;
+    /* גודל גופן קריא */
+    text-align: right;
+    /* יישור טקסט לימין */
+}
+
+/* רספונסיביות למסכים קטנים */
+@media (max-width: 480px) {
+    .product-details {
+        margin: 20px 10px;
+        /* שוליים קטנים יותר */
+    }
+
+    .product-details h1 {
+        font-size: 1.8rem;
+        /* כותרת בגודל קטן יותר */
+    }
+
+    .product-info {
+        padding: 20px;
+        /* ריווח פנימי קטן יותר */
+        font-size: 1rem;
+        /* גופן קטן יותר */
+    }
+}

@@ -1,0 +1,167 @@
+
+body {
+    margin: 0px;
+    /* מסיר שוליים ברירת מחדל */
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+
+/* עיצוב שורת הניווט העליונה */
+.navbar {
+    display: flex;
+    /* מציג את הרכיבים בשורה */
+    position: fixed;
+    /* קבוע בראש הדף גם בגלילה */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* רוחב מלא */
+    background-color: #335C81;
+    padding: 8px 0;
+    /* ריווח אנכי */
+    z-index: 1000;
+    /* מוודא שהניווט מעל אלמנטים אחרים */
+    box-sizing: border-box;
+    /* כולל padding בתוך המידות */
+}
+
+/* תוכן פנימי של שורת הניווט */
+.nav-content {
+    max-width: 1000px;
+    /* גבול לרוחב */
+    margin: 0 auto;
+    /* ממרכז את התוכן */
+    display: flex;
+    justify-content: space-between;
+    /* רווח בין הצדדים */
+    gap: 30px;
+    /* רווחים בין אלמנטים */
+    color: white;
+}
+
+/* מיכל הקישורים */
+.nav-links {
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* קישורים בשורה */
+}
+
+/* קישורים רגילים */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    /* מסיר קו תחתון */
+    font-size: 1rem;
+    transition: 0.3s;
+    /* מעבר חלק בהובר */
+}
+
+/* שינוי צבע בקישורים כשעוברים עליהם */
+.nav-links a:hover {
+    color: #AFAFDC;
+}
+
+.navbar-logo {
+    align-items: self-start;
+    height: 30px;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: lighter;
+    color: #e4dfdf;
+    text-decoration: none;
+    margin-left: 230px;
+    /* ריחוק מהצד השמאלי */
+    margin-right: 40px;
+}
+
+.logo-text:hover {
+    color: #AFAFDC;
+}
+
+/* קישורים של התחברות/הרשמה */
+.auth-links {
+    justify-content: end;
+    margin-right: 400px;
+    flex-direction: column;
+    /* מוצג בעמודה */
+}
+
+/* הקו המפריד בין התחברות להרשמה */
+.separator {
+    margin: 0 5px;
+    color: #ccc;
+}
+
+/* רווח מעל התוכן כדי שלא ייכנס מתחת לניווט הקבוע */
+.main {
+    margin-top: 40px;
+    /* גובה ה-navbar */
+}
+
+/* מדיה קווארי למסכים קטנים (טאבלטים וכו') */
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        /* שובר את הניווט לעמודה */
+        align-items: center;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .logo-text {
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .auth-links {
+        margin: 0;
+        flex-direction: row;
+        /* שורה במסכים קטנים */
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .separator {
+        display: none;
+        /* מסתיר את הקו המפריד */
+    }
+}
+
+/* מדיה קווארי למסכים קטנים מאוד (טלפונים) */
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

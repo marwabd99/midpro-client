@@ -1,0 +1,67 @@
+.product-manager {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+}
+
+.product-manager h2,
+.product-manager h3 {
+    text-align: center;
+    color: #333;
+}
+
+.product-manager form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.product-manager input,
+.product-manager textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.product-manager button {
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.product-manager button:hover {
+    background-color: #005fa3;
+}
+
+.product-manager ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-manager li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-manager li button {
+    background-color: #e53935;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+.product-manager li button:hover {
+    background-color: #c62828;
+}
